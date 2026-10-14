@@ -8,9 +8,9 @@ public class ExpenseTracker {
         double expense = 0;
 
 System.out.println("Welcome to the Expense Tracker!");
-        System.out.println("Your monthly allowance is: RM" + allowance);
+        System.out.printf("Your monthly allowance is: RM%.2f%n", allowance);
         System.out.println("Please enter your expenses for the month.");
-        System.out.println("How many expenses would you like to enter? (Maximum 5)");
+        System.out.println("How many expenses would you like to enter?");
         int numExpenses = input.nextInt();
 
         for (int i = 0; i < numExpenses; i++) {
@@ -20,8 +20,9 @@ System.out.println("Welcome to the Expense Tracker!");
 
         double remaining = allowance - expense;
 
-        System.out.println("Allowance: RM" + allowance);
-        System.out.println("Expense: RM" + expense);
-        System.out.println("Remaining: RM" + remaining);
+        System.out.printf("Allowance: RM%.2f%n", allowance);
+        System.out.printf("Expense: RM%.2f%n", expense);
+        System.out.printf("Remaining: RM%.2f%n", remaining);
+        input.close();
     }
 }
