@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ExpenseTracker {
     public static void main(String[] args) {
         double allowance = 800.00;
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // hi
         double expense = 0;
 
 System.out.println("Welcome to the Expense Tracker!");
