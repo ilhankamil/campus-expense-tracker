@@ -8,6 +8,7 @@ public class ExpenseTracker {
         double expense = 0;
 
         System.out.println("Welcome to the Expense Tracker!");
+        System.out.println("--------------------------------");
         System.out.printf("Your monthly allowance is: RM%.2f%n", allowance);
         System.out.println("Please enter your expenses for the month.");
         System.out.println("How many expenses would you like to enter?");
